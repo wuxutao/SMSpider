@@ -29,7 +29,5 @@ class SmPipeline(object):
         itemDict['content'] = ''.join(item['smContent'])
 
         value = json.dumps(dict(itemDict),ensure_ascii=False)+'\n'
-        #print value
         uploadData(value)
         return item
-        #raise DropItem("Missing t")
